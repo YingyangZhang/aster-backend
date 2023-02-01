@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: aster_backend_production
-  username: aster_backend
-  password: <%= ENV["ASTER_BACKEND_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
